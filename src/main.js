@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 import App from 'src/containers/App';
 
-
 if (module.hot) {
     module.hot.accept();
 }

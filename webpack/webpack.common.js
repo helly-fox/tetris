@@ -12,7 +12,7 @@ module.exports = {
 
     entry: [
         'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
-        path.join(appRoot.path, 'src/main.jsx'),
+        path.join(appRoot.path, 'src/main.js'),
     ],
 
     output: {
@@ -61,11 +61,6 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: [/node_modules/, /public/],
 
-            },
-            {
-                test: /\.jsx$/,
-                loader: 'babel-loader',
-                exclude: [/node_modules/, /public/],
             },
             {
                 test: /\.css$/,
